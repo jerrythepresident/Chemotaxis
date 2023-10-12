@@ -41,10 +41,10 @@ class Jerry
   void show()
   {
   fill(253, 204, 13);
-  image(img, myX, myY,10,10);
   pushMatrix();
-  star(myX, myY, 10, 39, 5);
+  star(myX, myY, 10, 70/3, 5);
   popMatrix();
+  image(img, myX, myY, 30, 30);
   }
 }
 
