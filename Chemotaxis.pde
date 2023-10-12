@@ -22,7 +22,7 @@ class Jerry
   int myX,myY;
   Jerry()
   {
-    myX=myY=250;
+    myX=myY=(int)(Math.random()*501);;
   }
   void walk()
   {
