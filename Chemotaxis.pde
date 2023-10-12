@@ -73,7 +73,7 @@ class me
   } 
   void show()
   {
-  image(img, myX, myY, 60, 60);
+  image(img, myX, myY, 70, 70);
   }
 }
 
