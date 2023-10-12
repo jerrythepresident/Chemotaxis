@@ -31,8 +31,8 @@ class Jerry
   }
   void walk()
   {
-    myX=myX+(int)(Math.random()*11)-5;
-    myY=myY+(int)(Math.random()*11)-5;
+    myX=myX+(int)(Math.random()*7)-3;
+    myY=myY+(int)(Math.random()*7)-3;
   float targetX = mouseX;
   float dx = targetX - myX;
   myX += dx * 0.008;
@@ -73,7 +73,7 @@ class me
   } 
   void show()
   {
-  image(img, myX, myY, 40, 40);
+  image(img, myX, myY, 60, 60);
   }
 }
 
