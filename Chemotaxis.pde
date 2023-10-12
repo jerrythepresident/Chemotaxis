@@ -31,18 +31,19 @@ class Jerry
   float targetX = mouseX;
   float dx = targetX - myX;
   myX += dx * 0.005;
-  
+ 
   float targetY = mouseY;
   float dy = targetY - myY;
   myY += dy * 0.005;
   }
+  
   void show()
   {
+  image(img, myX, myY,10,10);
   fill(253, 204, 13);
   pushMatrix();
   star(myX, myY, 30/3, 70/3, 5);
   popMatrix();
-  image(img, myX, myY,10,10);
   }
 }
 
