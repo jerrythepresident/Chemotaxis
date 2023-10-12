@@ -13,7 +13,7 @@ void setup()
 }
 void draw()
 {
-  background(0);
+  background(#4BB6EF);
   for(int i=0;i<stars.length; i++){
   stars[i].show();
   stars[i].walk();
@@ -35,11 +35,11 @@ class Jerry
     myY=myY+(int)(Math.random()*5)-2;
   float targetX = mouseX;
   float dx = targetX - myX;
-  myX += dx * 0.005;
+  myX += dx * 0.008;
  
   float targetY = mouseY;
   float dy = targetY - myY;
-  myY += dy * 0.005;
+  myY += dy * 0.008;
   }
   
   void show()
