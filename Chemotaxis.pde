@@ -1,5 +1,6 @@
 PImage img;
 Jerry [] stars;
+me bob;
 void setup()
 {
   size(500,500);
@@ -8,6 +9,7 @@ void setup()
   for(int i=0; i<stars.length; i++){
     stars[i]= new Jerry();
   }
+  bob = new me(250,250);
 }
 void draw()
 {
@@ -16,6 +18,8 @@ void draw()
   stars[i].show();
   stars[i].walk();
   }
+  bob.walk();
+  bob.show();
 }
 class Jerry
 {
@@ -44,7 +48,32 @@ class Jerry
   pushMatrix();
   star(myX, myY, 10, 70/3, 5);
   popMatrix();
-  image(img, myX, myY, 30, 30);
+  }
+}
+
+class me
+{
+  int myX,myY;
+  me(int x, int y)
+  {
+  myX=x;
+  myY=y;
+  }
+  void walk()
+  {
+  myX=myX+(int)(Math.random()*5)-2;
+  myY=myY+(int)(Math.random()*5)-2;
+  float targetX = mouseX;
+  float dx = targetX - myX;
+  myX += dx ;
+ 
+  float targetY = mouseY;
+  float dy = targetY - myY;
+  myY += dy ;
+  } 
+  void show()
+  {
+  image(img, myX, myY, 40, 40);
   }
 }
 
