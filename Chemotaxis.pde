@@ -77,10 +77,6 @@ class me
   }
 }
 
-  void mousePressed()
-  {
-      redraw();
-  }
 
 void star(float x, float y, float radius1, float radius2, int npoints) {
   float angle = TWO_PI / npoints;
